@@ -35,7 +35,7 @@ body {
 main {
   border: 2px solid black ;
   background: var(--color-light);
-  width: 70%;
+  width: 90%;
   padding: 3rem;
   border-radius: 1rem;
 }
@@ -86,11 +86,16 @@ img {
   border: 5px solid transparent ; 
   box-shadow: 0px 3px 5px var(--color-dark);
   overflow: hidden;
+  transition: var(--transition);
 }
 
 .galeri:hover {
   border-color: var(--color-white) ;
   background: transparent ;
+}
+
+.galeri:hover img {
+  filter: saturate(0.6);
 }
 
 /* Kontainer gambar thumbnail */
@@ -101,3 +106,15 @@ img {
 }
 
 /* Kontainer gambar more */
+
+.gallery_more {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  margin-top: 0.8rem;
+}
+
+.gallery_more img {
+  aspect-ratio: 5/4;
+  border-radius: 0.7rem;
+}
