@@ -5,3 +5,30 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+:root {
+  /* Variabel warna */
+  --color-body-bg : #d8dae2 ;
+  --color-white: #fff ;
+  --color-light: #eff0f1  ;
+  --color-dark: #12122e ;
+  
+  /* Variabel animasi */
+  --transition: all 300ms ease;
+  
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-body-bg);
+  display: grid ;
+  place-items: center;
+  font-family: 'Po';
+  
+}
+
+
+main {
+  border: 2px solid black ;
+}
