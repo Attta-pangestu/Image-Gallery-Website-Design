@@ -65,7 +65,7 @@ main > .kategoris  .kategori:hover {
 }
 
 img {
-  display: block;
+  display: block; 
   width: 100%;
   object-fit: cover;
 }
@@ -85,7 +85,19 @@ img {
   border-radius: 1rem;
   border: 5px solid transparent ; 
   box-shadow: 0px 3px 5px var(--color-dark);
+  overflow: hidden;
 }
 
+.galeri:hover {
+  border-color: var(--color-white) ;
+  background: transparent ;
+}
 
+/* Kontainer gambar thumbnail */
 
+.gallery_thumbnail >  img {
+  aspect-ratio: 3/2;
+  border-radius: 0.7rem;
+}
+
+/* Kontainer gambar more */
